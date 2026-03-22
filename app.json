@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "WhatsSave",
+    "slug": "whats-save",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.personal.whatssave",
+      "permissions": [
+        "BIND_NOTIFICATION_LISTENER_SERVICE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+        [
+          "react-native-android-notification-listener",
+          {
+            "title": "WhatsSave",
+            "message": "Tracking WhatsApp messages"
+          }
+        ]
+    ]
+  }
+}
